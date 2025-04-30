@@ -1,0 +1,624 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+    }
+    
+    #page1 {
+        padding: 3vw;
+    }
+    
+    nav {
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2.5vw;
+        color: #c9c9c9;
+    }
+    
+    #nav1 h1 {
+        font-family: "Sansation";
+        font-weight: 700;
+        font-size: 3vw;
+        letter-spacing: 0.1vw;
+    }
+    
+    #nav1 span {
+        font-weight: 500;
+    }
+    
+    #nav2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2vw;
+        padding: 1vw 2vw;
+        border-bottom: 1px solid #fff;
+        font-family: 'roboto';
+        text-transform: uppercase;
+    }
+    
+    #nav2 h3 {
+        font-weight: 500;
+    }
+    
+    #nav2 h3:hover {
+        scale: 1.2;
+        margin-top: -1.2vw;
+        transition: all linear 0.3s;
+    }
+    
+    #p-img {
+        width: 20vw;
+        height: 20vw;
+        padding-left: 5vw;
+        padding-top: 5vw;
+    }
+    
+    #p-img img {
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    #marque {
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    
+    #marque h2 {
+        padding: 2.7vw 0;
+        font-size: 2vw;
+        /* border-top: 2px solid #cfcfcf; */
+        color: #b6b6b6;
+        font-family: "space grotesk";
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    .elem {
+        border-top: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 2vw;
+    }
+    
+    .elem img {
+        height: 6.6vw;
+        width: 6.6vw;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: -60%;
+        scale: 0;
+        opacity: 0;
+    }
+    
+    .elem:hover img {
+        margin-left: -30%;
+        scale: 1;
+        opacity: 1;
+        transition: all ease 1s;
+    }
+    
+    .elem i {
+        color: #fff;
+        font-size: 2vw;
+        display: none;
+        opacity: 0;
+    }
+    
+    .elem:nth-last-child(1) {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .elem:hover {
+        background-color: #161616;
+    }
+    
+    .elem:hover i {
+        display: initial;
+        opacity: 1;
+        transition: all ease 2s;
+    }
+    
+    #div {
+        width: 100%;
+        padding: 7vw 6.5vw;
+        background-color: #f6f6f6;
+    }
+    
+    #t-1 {
+        height: 20vw;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding: 3vw 0;
+    }
+    
+    #t-1 h3 {
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: "Space Grotesk";
+        padding: 1vw 0;
+        color: #000;
+    }
+    
+    #t-1 h1 {
+        font-size: 6vw;
+        font-weight: 500;
+        font-family: "Space Grotesk";
+        letter-spacing: -0.2vw;
+        line-height: 6.5vw;
+        padding-top: 1.5vw;
+    }
+    
+    #div2 {
+        width: 100%;
+        height: fit-content;
+        background-color: #f6f6f6;
+        padding: 3vw;
+    }
+    
+    #image {
+        height: 45vw;
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 1.6vw;
+        padding: 3vw 3vw;
+    }
+    
+    #im1 {
+        height: 100%;
+        width: 100%;
+        border-left: 1px solid #000;
+        padding: 4vw 5vw;
+        display: flex;
+        gap: 10vw;
+    }
+    
+    #p1 {
+        width: 46%;
+    }
+    
+    #text1 {
+        border-bottom: 1px solid #3434347f;
+    }
+    
+    #tp1 h2 {
+        font-family: "Space Grotesk";
+        font-weight: 500;
+        padding-bottom: 2vw;
+    }
+    
+    #tp2 {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    #tp2 h1 {
+        font-size: 3vw;
+        font-family: "Space Grotesk";
+        font-weight: 500;
+        padding-bottom: 1vw;
+        margin-top: 0.9vw;
+    }
+    
+    #tp2 h3 {
+        font-size: 1.5vw;
+        font-family: "Space Grotesk";
+        font-weight: 600;
+        color: #636363;
+    }
+    
+    #tp3 h4 {
+        font-family: "questrial";
+        font-weight: 500;
+        font-size: 1.2vw;
+        line-height: 1.4vw;
+        margin-top: 1vw;
+    }
+    
+    #p2 {
+        height: 10vw;
+        width: 10vw;
+        background-color: #fff;
+    }
+    
+    #tp4 {
+        margin-top: 2vw;
+        height: 3vw;
+        /* background-color: yellow; */
+        width: 50%;
+        border-bottom: 1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #tp4 h3 {
+        font-family: "Space Grotesk";
+        color: #000000b3;
+        font-size: 1.1vw;
+        font-weight: 600;
+    }
+    
+    #tp4 i {
+        font-size: 1.9vw;
+        color: #303030;
+    }
+    
+    #tp4:hover h3 {
+        color: #000000db;
+    }
+    
+    #tp4:hover i {
+        rotate: 40deg;
+        transition: all ease 0.3s;
+    }
+    
+    #im2 {
+        /* background-color: red; */
+        width: 50%;
+    }
+    
+    #im2 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #page2 {
+        background-color: #000;
+        width: 100%;
+        padding-top: 10vw;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+    
+    #gym {
+        height: 40vw;
+        width: 100%;
+        border-top: 1px solid #696969;
+    }
+    
+    #gym #text1 {
+        height: 8vw;
+        width: 11vw;
+        /* background-color: red; */
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        font-family: "gilroy";
+        border-top: 1px solid #fff;
+    }
+    
+    #gym #text1 h2 {
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.4vw;
+    }
+    
+    #gym h1 {
+        font-size: 5.5vw;
+        white-space: nowrap;
+        font-family: "Wix madefor text VF";
+        letter-spacing: -0.1vw;
+        line-height: 5.5vw;
+        color: #fff;
+        font-weight: 500;
+        padding-bottom: 4vw;
+    }
+    
+    #gs {
+        display: flex;
+    }
+    
+    #g1 {
+        width: 64%;
+        height: 100%;
+        font-family: 'gilroy';
+        color: #fff;
+    }
+    
+    #g2 h3 {
+        color: #fff;
+        font-family: 'questrial';
+        font-weight: 500;
+        white-space: nowrap;
+        font-size: 1.2vw;
+        line-height: 1.7vw
+    }
+    
+    #tp5 {
+        margin-top: 3vw;
+        height: 3vw;
+        /* background-color: yellow; */
+        width: 50%;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #tp5 h3 {
+        font-family: "Space Grotesk";
+        color: #d3d3d3;
+        font-size: 1.1vw;
+        font-weight: 600;
+    }
+    
+    #tp5 i {
+        font-size: 1.9vw;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    #tp5:hover h3 {
+        color: #fff;
+    }
+    
+    #tp5:hover i {
+        rotate: 40deg;
+        transition: all ease 0.3s;
+    }
+    
+    #gym-img img {
+        border-bottom: 2px solid #fff;
+        position: relative;
+    }
+    
+    #page3 {
+        width: 100%;
+        background-color: #000;
+        padding: 0 6vw;
+        height: fit-content;
+    }
+    
+    #move {
+        height: 40vw;
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 13vw;
+        border-top: 1px solid #bebebe;
+    }
+    
+    #move-t1 {
+        /* background-color: yellow; */
+        width: fit-content;
+        height: 9vw;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #fff;
+        color: #fff
+    }
+    
+    #move-t1 h2 {
+        font-family: 'questrial';
+        font-weight: 500;
+        font-size: 1.6vw;
+    }
+    
+    #move h1 {
+        color: #fff;
+        font-size: 6vw;
+        font-family: "Space Grotesk";
+        font-weight: 500;
+        letter-spacing: -0.2vw;
+    }
+    
+    #walk {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 6vw;
+    }
+    
+    #walk .ala {
+        width: 20vw;
+        /* background-color: red; */
+    }
+    
+    #walk h1 {
+        /* width: fit-content; */
+        border-bottom: 1px solid #fff;
+    }
+    
+    #walk h3 {
+        padding: 1vw 0;
+        color: #fff;
+        font-family: "Space Grotesk";
+        font-weight: 500;
+    }
+    
+    #vid {
+        height: 27vw;
+    }
+    
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #div4 {
+        height: 135%;
+        width: 100%;
+        background-color: #fff;
+        padding: 3vw 6vw;
+        padding-top: 7vw;
+    }
+    
+    #mail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        /* background-color: red; */
+        height: 4.5vw;
+    }
+    
+    #mail h4 {
+        font-weight: 500;
+        color: #000;
+    }
+    
+    #up-div {
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        /* background-color: red; */
+        font-family: "Space Grotesk";
+    }
+    
+    #marque1 h1 {
+        font-size: 5vw;
+        font-weight: 600;
+        line-height: 5.8vw
+    }
+    
+    #for {
+        display: flex;
+        align-items: center;
+        gap: 1.1vw;
+        padding: 1vw 0;
+        /* background-color: red; */
+    }
+    
+    #for h4 {
+        font-weight: 500;
+        color: #000;
+        font-size: 1vw;
+    }
+    
+    button {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #000;
+        padding: 0.5vw 18vw;
+        text-transform: uppercase;
+        border-radius: 2vw;
+        font-size: 1.35vw;
+        font-weight: 500;
+        font-family: "Space Grotesk";
+    }
+    
+    button a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    button:hover {
+        color: #000;
+        background-color: transparent;
+    }
+    
+    button:hover a {
+        color: #000;
+    }
+    
+    #mar2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding: 1.5vw 0;
+    }
+    
+    #marque2 {
+        width: 100%;
+        height: 17vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 3vw 0;
+        gap: vw;
+    }
+    
+    #footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-family: "questrial";
+        margin-top: 7vw;
+    }
+    
+    .fot h2 {
+        padding: 1.5vw 0;
+        font-weight: 500;
+        font-size: 1.3vw;
+        color: #6E6E6E;
+    }
+    
+    .fot h1 {
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: #000000;
+    }
+    
+    .fot:nth-child(1) {
+        display: flex;
+        align-items: center;
+    }
+    
+    .fot img {
+        /* height: 3vw; */
+        width: 3.5vw;
+        margin-left: 0.5vw;
+    }
+    
+    .fot img:hover {
+        animation-name: rotate;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes rotate {
+        from {
+            rotate: 0;
+        }
+        to {
+            rotate: 180deg;
+        }
+    }
+    
+    #footer-text {
+        margin-top: 8vw;
+        font-family: "questrial";
+    }
+    
+    #footer-text h3 {
+        font-weight: 500;
+        font-size: 1.3vw;
+        color: #6E6E6E;
+    }
+    
+    #footer-text a {
+        /* border-bottom: 1px solid #6E6E6E; */
+        position: relative;
+        color: #6E6E6E;
+    }
+    
+    #footer-text a::after {
+        content: 'TM';
+        position: absolute;
+        font-size: 0.65vw;
+        color: #000;
+    }
+    
+    #footer-text a:hover {
+        color: #000;
+    }
